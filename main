@@ -1,0 +1,33 @@
+#include <iostream> 
+using namespace std;
+ 
+int main() {
+	
+	int a=0, b=0, c=0;
+	
+	cout << "escreva um numero para um lado do triangulo: ";
+	cin >> a;
+	
+	cout << "escreva um numero para outro lado do triangulo: ";
+	cin >> b;
+	
+	cout << "escreva um numero para outro lado do triangulo: ";
+	cin >> c;
+	
+	if(a<b+b && b<a+c && c<a+b){
+		if(a==b && b==c){
+			cout << "o triangulo e equilatero";
+		}
+		else if(a==b || a==c || b==c){
+			cout << "o triangulo e isosceles";
+		}
+		else{
+			cout << "o triangulo e escaleno";
+		}
+	}
+	else{
+		cout << "os valores nao se caracterizam como triangulo";
+	}
+	
+    return 0;
+}
